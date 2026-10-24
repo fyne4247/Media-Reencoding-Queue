@@ -5,8 +5,14 @@ re-encoding H.264 (and other older codecs) to HEVC with FFmpeg. It works one
 file at a time, verifies every result, and **never deletes an original**: after
 a verified encode the source moves to a folder you choose.
 
-Works on macOS, Linux and Windows. Python standard library only, so there is
-nothing to `pip install` and no virtual environment is needed.
+Written to run on macOS, Linux and Windows. Python standard library only, so
+there is nothing to `pip install` and no virtual environment is needed.
+
+> **Tested only on an Apple M1 Mac** (macOS, FFmpeg 9, both `libx265` and
+> `hevc_videotoolbox`). The Linux and Windows launchers, file locking, stop key
+> and trash handling, and the NVIDIA/Intel/AMD encoder profiles are written from
+> the documentation and have never been run. They may well work, but expect
+> rough edges, and bug reports are welcome.
 
 > **This tool re-encodes your files.** Re-encoding is lossy even when the result
 > looks identical. Try it on a copy of a few files first, and keep the originals
