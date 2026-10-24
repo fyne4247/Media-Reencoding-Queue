@@ -1,0 +1,9 @@
+# Personal settings and run data
+config.ini
+data/
+
+# Python / OS
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
